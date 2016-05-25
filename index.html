@@ -18,33 +18,56 @@
 	</head>
 
 	<body>
-		<div class="container">
-			<!--[if lt IE 8]>
-				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-			<![endif]-->
-			<header id="home">
-				<img src="images/CS-header.png" alt="Coastal Soul: Where the main ingredient is love">
-				<nav>
-					<a href="#home">Coastal Soul</a>
-					<ul>
-						<li><a href="#home">Home</a></li>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<header class ="row" id="home">
+			<nav class="col-xs-12 navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span
+					</button>
+					<a class="navbar-brand" href="#home">Coastal Soul</a>
+				</div><!-- end navbar-header-->
+				<div class="collapse navbar-collapse" id="collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#home">Home</a></li>
 						<li><a href="#services">Services</a></li>
 						<li><a href="#menu">Menu</a></li>
 						<li><a href="#reviews">Reviews</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</nav>
-			</header><!-- end #home-->
-			
-			<div class="carousel">
-				<img src="images/coastal-soul2.jpg" alt="Soul food meal: fried chicken, red beans and rice, collard greens, and cornbread">
-				<img src="images/coastal-soul4.jpg" alt="Soul food meal: fried chicken, black eye peas, collard greens, and cornbread">
-				<img src="images/coastal-soul5.jpg" alt="Soul food meal: fried chicken, red beans and rice, collard greens, and cornbread">
-			</div><!-- end carousel -->
-			
-			<div class="main">
-				<div class="page" id="services">
+				</div><!--navbar-collapse-->
+			</nav>
+			<img src="images/CS-header.png" alt="Coastal Soul: Where the main ingredient is love" class="col-xs-12">
+		</header><!-- end #home-->
+		
+		<div class="container">
+			<div class="row carousel slide" data-ride="carousel" id="soul-food">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/coastal-soul2.jpg" alt="Soul food meal: fried chicken, red beans and rice, collard greens, and cornbread">
+					</div><!-- end carousel item 1-->
+					<div class="item">	
+						<img src="images/coastal-soul4.jpg" alt="Soul food meal: fried chicken, black eye peas, collard greens, and cornbread">
+					</div><!-- end carousel item 2 -->
+					<div class="item">
+						<img src="images/coastal-soul5.jpg" alt="Soul food meal: fried chicken, red beans and rice, collard greens, and cornbread">
+					</div><!-- end carousel item 3 -->
+				</div><!-- end carousel-inner -->
+				
+			<	a href="#soul-food" ></a><!-- KEEP GOING HERE: add controls to carousel-->
+				
+			</div><!-- end soul-food carousel slide -->
+		</div><!-- end container -->
+		
+		<div class="main">
+			<div class="row">
+				<div class="col-xs-12 col-md-4" id="services">
 					<h2>Services</h2>
 					<img src="images/coastal-soul-catering.jpg" alt="Soul food catering: collard greens, black eye peas, shrimp and grits">
 					<p>Coastal Soul offers a range of soul food services to the North Oregon Coast:</p>
@@ -54,8 +77,8 @@
 						<li>Catering for any occasion</li>
 					</ul>
 				</div><!-- end #services -->
-				
-				<div class="page" id="menu">
+					
+				<div class="col-xs-12 col-md-4" id="menu">
 					<h2>Menu</h2>
 					<img src="images/fried-chicken.jpg" alt="Fried chicken">
 					<p>Coastal Soul's specialies include:</p>
@@ -71,8 +94,8 @@
 						<li>Candied yams</li>
 					</ul>
 				</div><!-- end #menu -->
-				
-				<div class="page" id="reviews">
+					
+				<div class="col-xs-12 col-md-4" id="reviews">
 					<h2>Reviews</h2>
 					<p>People are raving about Coastal Soul...</p>
 					<ul>
@@ -80,15 +103,17 @@
 						<li>"Amazing! This is the best soul food I have ever had. Home style cooking, delicious flavor, and the cornbread....the cornbread is to die for!!" Shannon Michaelis, Tillamook, OR<sup><a href="https://www.facebook.com/coastalsoulnw/reviews/">[2]</a></sup></li>
 					</ul>
 				</div><!-- end #reviews -->
+			</div><!-- end row -->
 				
-				<div class="page" id="about">
+			<div class="row">
+				<div class="col-xs-12 col-md-6" id="about">
 					<h2>About Coastal Soul</h2>
 					<img src="images/lanicia.jpg" alt="LaNicia Williams, photo by Jolie Mae Photography">
 					<p>Coastal Soul's founder and love ambassador, LaNicia Williams' soul food has made a name for itself as a rare gem on the North Oregon Coast. According to LaNicia, the most important ingredient in her soul food is love, and you can taste it in every bite.</p>
 					<p>LaNicia shared her <a href="http://www.upperleftedge.com/2015/10/08/for-the-love-of-collard-greens/#">collard greens recipe</a> with Upper Left Edge online, but her fried chicken recipe is, and forever will remain, a secret!</p>
 				</div><!-- end #about -->
-				
-				<div class="page" id="contact">
+					
+				<div class="col-xs-12 col-md-6" id="contact">
 					<h2>Contact Coastal Soul</h2>
 					<img src="images/haystack-rock.jpg" alt="Haystack Rock, Cannon Beach, OR, photo by LaNicia Williams">
 					<p>For pricing and more information about Coastal Soul, contact LaNicia Williams.</p>
@@ -98,13 +123,14 @@
 						<li><a href="https://www.facebook.com/coastalsoulnw/">Facebook</a></li>
 					</ul>
 				</div><!-- end #contact -->
-			</div><!-- end main-->
+			</div><!-- end row -->
+		</div><!-- end main-->
 			
+		<div class="row">
 			<footer>
 				<p>All contents &copy; LaNicia Williams 2016. All rights reserved.</p>
 			</footer>
-			
-		</div><!-- end .container-->	
+		</div><!-- end row-->
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.3.min.js"><\/script>')</script>
